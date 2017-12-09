@@ -10,18 +10,18 @@
 
 cLamp HeartbeatLed		(13, HIGH, LOW,  200);
 
-cLamp lampGreenPin10	(10, HIGH, LOW,  500);
+cLamp lampGreenPin10	        (10, HIGH, LOW,  500);
 cLamp lampRedPin9		(9,  HIGH, LOW,	 500);
 
 cLamp lampGreenPin5		(5,  LOW,  HIGH, 500);
 cLamp lampRedPin4		(4,  LOW,  HIGH, 500);
 
 cLamp lampRedPin6		(6,  HIGH, LOW,  500);
-cLamp lampYellowPin7	(7,  HIGH, LOW,  500);
-cLamp lampGreenPin8     (8,  HIGH, LOW,  500);
+cLamp lampYellowPin7	        (7,  HIGH, LOW,  500);
+cLamp lampGreenPin8             (8,  HIGH, LOW,  500);
 
 cLamp lampRedPin1		(1,  LOW,  HIGH, 500);
-cLamp lampYellowPin2	(2,  LOW,  HIGH, 500);
+cLamp lampYellowPin2	        (2,  LOW,  HIGH, 500);
 cLamp lampGreenPin3		(3,  LOW,  HIGH, 500);
 
 cLamp *lampsOftrafficLightsCar_first[]={
@@ -64,14 +64,14 @@ cTrafficLight *trafficLights[] ={
 
 static uint8_t trafficLightScheduler[][5] = {
 			//Main Cars         Main Ped		Second Cars			Second Ped       Delay
-			{modeGreen,		 	modeRed,		modeRed,			modeGreen,          5},
-			{modeGreenBlink, 	modeRed,		modeRed,			modeGreenBlink,     5},
-			{modeYellow,		modeRed,		modeRed,			modeRed,            5},
-			{modeRed, 			modeGreen,		modeRedYellow,		modeRed,            5},
-			{modeRed,			modeGreen, 		modeGreen,			modeRed,            5},
-			{modeRed,			modeGreenBlink,	modeGreenBlink,		modeRed,            5},
-			{modeRed,			modeRed,		modeRedYellow,		modeRed,            5},
-			{modeRedYellow,		modeRed,		modeRed,			modeRed,            5}
+			{modeGreen,		modeRed,		modeRed,		modeGreen,          5},
+			{modeGreenBlink, 	modeRed,		modeRed,		modeGreenBlink,     5},
+			{modeYellow,		modeRed,		modeRed,		modeRed,            5},
+			{modeRed, 		modeGreen,		modeRedYellow,		modeRed,            5},
+			{modeRed,		modeGreen, 		modeGreen,		modeRed,            5},
+			{modeRed,		modeGreenBlink,	        modeGreenBlink,		modeRed,            5},
+			{modeRed,		modeRed,		modeRedYellow,		modeRed,            5},
+			{modeRedYellow,		modeRed,		modeRed,		modeRed,            5}
 
 };
 
